@@ -1,0 +1,100 @@
+install.packages("ggplot2")
+library(ggplot2)
+library(ggplot2)
+airquality
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone))
+str(airquality)
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone, color=Month))
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone), color="red")
+iris
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width), color="red")
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="red"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width), color="red")
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="red"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, z=Species))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width & Species))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="Species"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width) color="Species")
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="Species"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="blue"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="Species"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width), color="Species")
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color="Species"))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, color=Species))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, size=Species))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, shape=Species))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + facet_wrap(~Month)
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone)) + facet_grid(~Month)
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone)) + facet_grid(Day~Month)
+load("~/.RData")
+clear
+airquality
+str(airquality)
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+ggplot
+ggplot2
+install.packages("ggplot2")
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+ggplot(data("airquality"))
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+install.packages("ggplot2.utils")
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+airquality
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+install.packages("ggplot2")
+library(ggplot2)
+airquality
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone, color=Month))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width, shape=Species))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + facet_wrap(~Month)
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone)) + facet_grid(~Month)
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone)) + facet_grid(Day~Month)
+mtcars
+nrow(mtcars)
+ncol(mtcars)
+class(mtcars$disp)
+help(disp)
+help(mtcars)
+mtcars[1:10]
+mtcars[1:10,]
+help(seq())
+mtcars[seq(1, nrow(mtcars), by=2)]
+mtcars[seq(1, nrow(mtcars), by=2), ]
+mean(mtcars$mpg)
+mtcars[which(mtcars$cyl==6)]
+mtcars[which(mtcars$cyl==6),]
+mtcars[which(mtcars$mpg < mean(mtcars$mpg)),]
+mtcars[which(mtcars$mpg==max(mtcars$mpg)), "hp"]
+help(mpg)
+mpg
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty))
+help(mpg)
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty)) + labs(x="Displacement (litres)", y="City (miles per gallon)" title="Angela, Roman, Kinsey") + xlim(c(0, 10)) + ylim(c(0, 40))
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty)) + labs(x="Displacement (litres)", y="City (miles per gallon)", title="Angela, Roman, Kinsey") + xlim(c(0, 10)) + ylim(c(0, 40))
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty, color=year))
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty, color=class, alpha=year))
+help("geom_point")
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty, color=class, alpha=year))
+install.packages("ggplot2")
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty, color=class, alpha=year))
+install.packages("ggplot2")
+library("ggplot2")          #REQUIRED EACH TIME
+ggplot(data=mpg) + geom_point(mapping=aes(x=displ, y=cty, color=class, alpha=year))
+library(ggplot2)
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone))
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone)) + scale_x_continuous("Temperature")
+ggplot(data=airquality) + geom_point(mapping=aes(x=Temp, y=Ozone)) + scale_x_continuous("Temperature") + theme_bw()
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width))
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width")
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width") + xlim(c(1, 10)) + ylim(c(1, 10))
+help(theme_bw)
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width") + xlim(c(1, 10)) + ylim(c(1, 10)) + theme_bw()
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width") + xlim(c(1, 10)) + ylim(c(1, 10)) + theme_grey()
+help(theme_bw)
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width") + xlim(c(1, 10)) + ylim(c(1, 10)) + theme_classic()
+help(theme_bw)
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width") + xlim(c(1, 10)) + ylim(c(1, 10)) + theme_void()
+help(theme_bw)
+ggplot(data=iris) + geom_point(mapping=aes(x=Sepal.Length, y=Sepal.Width)) + labs(x="Sepal length", y="Sepal width") + xlim(c(1, 10)) + ylim(c(1, 10)) + theme_bw()
